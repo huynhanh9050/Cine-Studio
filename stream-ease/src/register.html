@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Register</title>
     <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../dist/output.css">
@@ -14,22 +14,23 @@
     <div class="bg-cover fixed bg-slate-600 opacity-70 w-full h-full"></div>
     <div class="container-fluid mx-auto my-auto flex justify-center items-center w-full h-full object-cover object-center absolute">
       <div class="w-1/3 bg-white p-4 rounded-md opacity-80">
-        <h1 class="text-center font-bold text-xl break-words max-w-full">Login</h1>
-        <form action="index-after.html" method="post">
+        <h1 class="text-center font-bold text-xl break-words max-w-full">Register</h1>
+        <form action="login.html" method="post">
           <div class="mb-4">
-            <label for="username" class="text-sm font-medium break-words max-w-full">Username</label>
+            <label for="username" class="text-sm font-medium break-words max-w-full required:">Username</label>
             <input type="text" name="username" id="username" class="w-full rounded-md py-2 px-3 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500">
           </div>
           <div class="mb-4">
-            <label for="password" class="text-sm font-medium break-words max-w-full">Password</label>
+            <label for="email" class="text-sm font-medium break-words max-w-full required:">Email</label>
+            <input type="email" name="email" id="email" class="w-full rounded-md py-2 px-3 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500">
+          </div>
+          <div class="mb-4">
+            <label for="password" class="text-sm font-medium break-words max-w-full required:">Password</label>
             <input type="password" name="password" id="password" class="w-full rounded-md py-2 px-3 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500">
           </div>
           <div class="mt-4">
-            <button type="submit" value="Login" class="btn btn-primary w-full rounded-md py-2 px-3 bg-blue-600 break-words max-w-full">Login</button>
+            <button type="submit" value="Register" class="btn btn-primary w-full rounded-md py-2 px-3 bg-blue-600 break-words max-w-full">Register</button>
           </div>
-          <a href="../src/register.html" class="text-sm font-medium text-center break-words max-w-full">
-            <p>Register</p>
-          </a>
         </form>
       </div>
     </div>

@@ -64,5 +64,103 @@ let brand=[
         PlatinumPlan:'78$/year'
     }
 ];
-let actor=[];
-let movie=[];
+let actor=[
+    {
+        id : 1,
+        name:"Tingdong Yang",.
+        age: "20"
+    },
+    {
+        id : 2,
+        name:"LiuBen",
+        age: "21"
+    },
+    {
+        id: 3,
+        name:"Ding Hui Yu",
+        age: '24'
+    },
+    {
+        id:4,
+        name:'Du Yu Hang',
+        age:'22'
+    },
+    {
+
+    }
+];
+let movie=[
+    {
+        id : 1,
+        title :"Mystic Land",
+        year:1999,
+        genres:[1,2,8],
+        director:[1],
+        actors:[1,2,3],
+    },
+    {
+        id:2,
+        title:"The Devildom Elephant Man",
+        year:2007,
+        genres:[6,8],
+        director:[1],
+    },
+    {
+        id:3,
+
+    }
+];
+let genre=[
+    {
+        id: 1,
+        name: "Action"
+    },
+    {
+        id: 2,
+        name:"Fiction"
+    },
+    {
+        id: 3,
+        name:"Romance"
+    },
+    {
+        id: 4,
+        name:'Horror'
+    },
+    {
+        id:5,
+        name:'Thriller/Suspense'
+    },
+    {
+        id:6,
+        name:'Comedy'
+    },
+    {
+        id:7,
+        name:'Documentary'
+    },
+    {
+        id:8,
+        name:'Adventure'
+    },
+    {
+        id:9,
+        name:'Crime'
+    },
+    {
+        id:10,
+        name:'Drama'
+    },
+    {
+        id:11,
+        name:'Mystery'
+    },
+    {
+        id:12,
+        name:'Sci-fi'
+    },
+    {
+        id:13,
+        name:'Animation'
+    }
+];
