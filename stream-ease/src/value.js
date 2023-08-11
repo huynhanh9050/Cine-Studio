@@ -67,22 +67,22 @@ let brand=[
 let actor=[
     {
         id : 1,
-        name:"Tingdong Yang",.
+        name:"Tim Robbins",
         age: "20"
     },
     {
         id : 2,
-        name:"LiuBen",
+        name:"Morgan Freeman",
         age: "21"
     },
     {
         id: 3,
-        name:"Ding Hui Yu",
+        name:"Liam Neeson",
         age: '24'
     },
     {
         id:4,
-        name:'Du Yu Hang',
+        name:'Ralph Fiennes',
         age:'22'
     },
     {
@@ -92,18 +92,25 @@ let actor=[
 let movie=[
     {
         id : 1,
-        title :"Mystic Land",
-        year:1999,
-        genres:[1,2,8],
+        title :"The Shawshank Redemption",
+        year:1994,
+        genres:[9,10],
         director:[1],
-        actors:[1,2,3],
+        actors:[1,2],
+        overview:'Andy Dufresne, a banker who is wrongly convicted of murdering his wife and her lover, is sentenced to life in Shawshank State Penitentiary. There, he befriends Ellis "Red" Redding and together they endure the challenges of prison life.',
+        country:'US',
+        brand:[1,2]
     },
     {
         id:2,
-        title:"The Devildom Elephant Man",
-        year:2007,
-        genres:[6,8],
+        title:"Schindler's List",
+        year:1993,
+        genres:[10,16],
         director:[1],
+        actors:[3,4],
+        overview:'Oskar Schindler, a German businessman, saved the lives of over a thousand Jews from the Holocaust by employing them in his factories.',
+        country:'US',
+        brand:[1,3]
     },
     {
         id:3,
@@ -162,5 +169,17 @@ let genre=[
     {
         id:13,
         name:'Animation'
-    }
+    },
+    {
+        id:14,
+        name:'Family'
+    },
+    {
+        id:15,
+        name:'Fantasy'
+    },
+    {
+        id:16,
+        name:'History'
+    },
 ];
