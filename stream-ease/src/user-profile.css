@@ -412,4 +412,8 @@ display: none;
     margin-left: -4rem;
 }
     }
-   
+    @media only screen and (min-width : 321px) {
+        .item-favorites{
+            font-size:13px;
+        }
+        }
