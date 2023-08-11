@@ -388,6 +388,28 @@ display: none;
         background: linear-gradient(248.28deg, #9e61ff 9.539999999999999%, rgba(142,97,255,0) 32.8%),radial-gradient(81.70999999999999% 279.87% at -16.57% -92%, #619bff 28.69%, rgba(205,219,248,0) 69.54000000000001%),#6c52ee;
     }
     }
-    @media only screen and(max-device-width : 320px){
-        
+    
+    @media screen and  (max-width : 320px){
+        #nav-count{
+            margin-left:2vh;
+        }
+        .nav {
+            left:4vh;
+        }
+        .header-bottom .nav li .active:after {
+    content: " ";
+    height: 3px;
+    width: 23%;
+    left: 15px;
+    bottom: -9px;
+    position: absolute;
+    background: linear-gradient(248.28deg, #9e61ff 9.539999999999999%, rgba(142,97,255,0) 32.8%),radial-gradient(81.70999999999999% 279.87% at -16.57% -92%, #619bff 28.69%, rgba(205,219,248,0) 69.54000000000001%),#6c52ee;
+}
+.user-profile {
+    display: flex;
+    align-items: center;
+    max-width: 335px;
+    margin-left: -4rem;
+}
     }
+   
