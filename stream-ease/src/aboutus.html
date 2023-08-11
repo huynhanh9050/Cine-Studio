@@ -7,15 +7,95 @@
   <title>About Us</title>
   <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
   <link rel="stylesheet" href="../dist/output.css">
+
   <link rel="stylesheet" href="">
    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="">
     <link
         href="https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 </head>
 <style>
+     .footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: black;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
     .search-box{
     background-color: #d1d1d111;
     padding: 3px 20px ;
@@ -278,10 +358,11 @@ nav{
         </form>
     </nav>
     <div class="main">
-        
+
     </div>
     <img src="./images/image-login.jpg" class="min-w-full min-h-full fixed object-cover " alt="">
-    <div class="fixed opacity-90 min-w-full min-h-full text-center object-cover" style="background-color: #00031C;"></div>
+    <div class="fixed opacity-90 min-w-full min-h-full text-center object-cover" style="background-color: #00031C;">
+    </div>
     <div class="min-w-full min-h-full">
         <div class="row w-full relative">
             <div class="text-white min-w-full text-center font-[REM]">
@@ -302,7 +383,8 @@ nav{
             <div class="w-full flex mt-52">
                 <div class="col-4 ml-24 ">
                     <div class="image">
-                        <img src="https://i.pinimg.com/564x/cd/ac/25/cdac25907202528f6cc79c22aaf4fd44.jpg" alt="" class="h-96 w-full">
+                        <img src="https://i.pinimg.com/564x/cd/ac/25/cdac25907202528f6cc79c22aaf4fd44.jpg" alt=""
+                            class="h-96 w-full">
                     </div>
                 </div>
                 <div class="col-4 ml-40">
@@ -313,11 +395,13 @@ nav{
                         </h3>
                     </div>
                     <div class="text-gray-400 mt-2">
-                        <p>Commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Aenean pharetra magna ac
+                        <p>Commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Aenean pharetra magna
+                            ac
                             placerat vestibulum
                             lectus mauris ultrices eros. Etiam erat velit scelerisque in. Sed libero enim sed faucibus
                             turpis in eu mi bibendum.
-                            In dictum non consectetur a erat nam at lectus. Massa ultricies mi quis hendrerit dolor magna.
+                            In dictum non consectetur a erat nam at lectus. Massa ultricies mi quis hendrerit dolor
+                            magna.
                         </p>
                     </div>
                     <div class="text-white mt-4">
@@ -332,7 +416,8 @@ nav{
                             </li>
                             <li class="mt-3">
                                 <i class="fa-regular fa-circle-check" style="color: #801bb6;"></i>
-                                <span href="#" class="ml-2">New shows added weekly, so there's always something to watch</span>
+                                <span href="#" class="ml-2">New shows added weekly, so there's always something to
+                                    watch</span>
                             </li>
                         </ul>
                     </div>
@@ -347,38 +432,138 @@ nav{
             </div>
         </div>
         <div class="row w-11/12 relative ml-28 break-words">
-            <div class="col-3 mt-3 m-0">
+            <div class="col-3 mt-4 m-0">
                 <i class="fa-solid fa-tag fa-2xl" style="color: #690dd9;"></i>
-                <h3 class="text-white mt-3"><b>The Best Deals</b></h3>
-                <div class="text-gray-400 mt-2">
+                <h3 class="text-white mt-4"><b>The Best Deals</b></h3>
+                <div class="text-gray-400 mt-4">
                     <p>Many exclusive discounts including personalized offers and Mix & Match bundles</p>
                 </div>
             </div>
-            <div class="col-3 mt-3 m-0">
+            <div class="col-3 mt-4 m-0">
                 <i class="fa-solid fa-tv fa-2xl" style="color: #690dd9;"></i>
-                <h3 class="text-white mt-3"><b>More Content On More Devices</b></h3>
-                <div class="text-gray-400 mt-2">
+                <h3 class="text-white mt-4"><b>More Content On More Devices</b></h3>
+                <div class="text-gray-400 mt-4">
                     <p>Many exclusive discounts including personalized offers and Mix & Match bundles</p>
                 </div>
             </div>
-            <div class="col-3 mt-3 m-0 ">
+            <div class="col-3 mt-4 m-0 ">
                 <i class="fa-solid fa-tag fa-2xl" style="color: #690dd9;"></i>
-                <h3 class="text-white mt-3"><b>Largest Selection Of 4K UHD Content</b></h3>
-                <div class="text-gray-400 mt-2">
+                <h3 class="text-white mt-4"><b>Largest Selection Of 4K UHD Content</b></h3>
+                <div class="text-gray-400 mt-4">
                     <p>Many exclusive discounts including personalized offers and Mix & Match bundles</p>
                 </div>
             </div>
-            <div class="col-3 mt-3 m-0 ">
+            <div class="col-3 mt-4 m-0 ">
                 <i class="fa-solid fa-table fa-2xl" style="color: #690dd9;"></i>
-                <h3 class="text-white mt-3"><b>Everything Your Digital Library Needs</b></h3>
-                <div class="text-gray-400 mt-2">
+                <h3 class="text-white mt-4"><b>Everything Your Digital Library Needs</b></h3>
+                <div class="text-gray-400 mt-4">
                     <p>Many exclusive discounts including personalized offers and Mix & Match bundles</p>
                 </div>
             </div>
         </div>
+        <div class="main mt-5">
+            <div class="row w-11/12 relative ml-28 break-words">
+                <div class="col-3 mt-4 m-0">
+                    <i class="fa-regular fa-face-kiss-wink-heart fa-2xl" style="color: #690dd9;"></i>
+                    <h3 class="text-white mt-4"><b>Family-friendly Features</b></h3>
+                    <div class="text-gray-400 mt-4">
+                        <p>Many exclusive discounts including personalized offers and Mix & Match bundles</p>
+                    </div>
+                </div>
+                <div class="col-3 mt-4 m-0">
+                    <i class="fa-solid fa-tag fa-2xl" style="color: #690dd9;"></i>
+                    <h3 class="text-white mt-4"><b>Personalization</b></h3>
+                    <div class="text-gray-400 mt-4">
+                        <p>Many exclusive discounts including personalized offers and Mix & Match bundles</p>
+                    </div>
+                </div>
+                <div class="col-3 mt-4 m-0 ">
+                    <i class="fa-solid fa-qrcode fa-2xl" style="color: #690dd9;"></i>
+                    <h3 class="text-white mt-4"><b>Rapid TV login</b></h3>
+                    <div class="text-gray-400 mt-4">
+                        <p>Many exclusive discounts including personalized offers and Mix & Match bundles</p>
+                    </div>
+                </div>
+                <div class="col-3 mt-4 m-0 ">
+                    <i class="fa-regular fa-face-smile-wink fa-2xl" style="color: #690dd9;"></i>
+                    <h3 class="text-white mt-4"><b>Be entertained, be enriched</b></h3>
+                    <div class="text-gray-400 mt-4">
+                        <p>Many exclusive discounts including personalized offers and Mix & Match bundles</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row w-full relative">
+            <div class="text-white min-w-full text-center font-[REM]">
+                <h1 class="mt-28 text-4xl"><b>What are you waiting for? Subscribe Now.</b></h1>
+                <div class="text-gray-400 mt-4 break-words w-5/12 mx-auto leading-8">
+                    <p>
+                        Subscribe for $5.99/ Month. Cancel anytime.
+                    </p>
+                    <a id="home" href="./aboutus.html">
+                        <button class="bg-violet-600 text-white rounded-lg py-2 px-4 mt-12"><b>Start Free Trial</b></button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row w-full relative">
+            <div class="text-white min-w-full font-[REM]">
+                <h1 class="mt-28 text-4xl text-center"><b>Leadership</b></h1>
+            </div>
+        </div>
+        <div class="row w-11/12 relative ml-28 break-words mt-4">
+            <div class="col-3 mt-4 m-0 text-center">
+                <img src="images/anhkhoa.jpg" alt="" border="bottom-right-radius: 300px;" class="rounded-full mx-auto w-10/12 h-4/6" width="200" height="200">
+                <h3 class="mt-4 text-violet-500"><b>Le Huynh Anh Khoa</b></h3>
+                <div class="text-gray-400 mt-4">
+                    <p>Developer</p>
+                </div>
+            </div>
+            <div class="col-3 mt-4 m-0 text-center">
+                <img src="images/cong.jpg" alt="" border="bottom-right-radius: 300px;" class="rounded-full mx-auto w-10/12 h-4/6" width="200" height="200">
+                <h3 class="text-white mt-4"><b>Nguyen Thanh Cong</b></h3>
+                <div class="text-violet-500 mt-4">
+                    <p>Developer</p>
+                </div>
+            </div>
+            <div class="col-3 mt-4 m-0 text-center">
+                <img src="images/quoc.jpg" alt="" border="bottom-right-radius: 300px;" class="rounded-full mx-auto w-10/12 h-4/6" width="200" height="200">
+                <h3 class="text-violet-500 mt-4"><b>Vo Tan Nam Quoc</b></h3>
+                <div class="text-gray-400 mt-4">
+                    <p>Developer</p>
+                </div>
+            </div>
+            <div class="col-3 mt-4 m-0 text-center">
+                <img src="images/phong.jpg" alt="" border="bottom-right-radius: 300px;" class="rounded-full mx-auto w-10/12 h-4/6" width="200" height="200">
+                <h3 class="text-white mt-4"><b>Tran Nguyen Thanh Phong</b></h3>
+                <div class="text-violet-500 mt-4">
+                    <p>Developer</p>
+                </div>
+            </div>
+        </div>
+        <div class="row w-11/12 relative ml-28 break-words font-[REM] bg-violet-600 px-auto rounded-2xl py-6 leading-10 pl-8">
+            <div class="w-6/12 pt-3 h-auto text-justify">
+                <div class="text-white min-w-full mt-0">
+                    <h1 class="text-3xl text-left pl-8"><b>Let’s Work Together</b></h1>
+                </div>
+                <div class="text-gray-300 min-w-full mt-0">
+                    <span class="text-left pl-8">We’re always looking for talented people to join StreamEase!</span>
+                </div>
+            </div>
+            <div class="w-6/12 pl-96 pt-6 h-auto text-justify   ">
+                <div class="mr-5">
+                    <a id="home" href="./aboutus.html">
+                        <button class="bg-black text-white rounded-lg py-2 px-4"><b>Open Positions</b></button>
+                    </a>
+                </div>
+            </div>
+            
+            
+        </div>
+        
     </div>
-    
 
+  
     <script src="https://kit.fontawesome.com/8d355d0fd1.js" crossorigin="anonymous"></script>
     <script src="../node_modules/angular/angular.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
