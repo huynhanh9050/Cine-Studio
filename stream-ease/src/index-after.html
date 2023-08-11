@@ -6,325 +6,14 @@
     <title>Home</title>
     <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="./after_login.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="./style.css">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
-<style>
-    .swiper-button-next,.swiper-button-prev{
-    position: static !important;
-    transform: translate(0,0);
-    margin: 10px 0px 0px 20px !important;
-}
-.swiper-button-next::after,
-.swiper-button-prev::after{
-    font-size: 25px !important;
-    font-weight: 800;
-    color: #ffffff;
-}
- *{
-    margin: 0;
-    padding: 0;
-    color: #f2f5f7;
-    font-family: sans-serif;
-   
-}
-body{
-    overflow-x: hidden;
-}
-.container{
-	max-width: 1170px;
-	margin:auto;
-}
-.row{
-	display: flex;
-	flex-wrap: wrap;
-}
-nav{
-    height: 6rem;
-    width: 100%;
-    background-color: #131418;
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
-    display: flex;
-    position: fixed;
-    z-index: 10;
-}
 
-/*Styling logo*/
-.logo{
-    padding:1vh 1vw;
-    text-align: center;
-}
-.logo img {
-    height: 5rem;
-    width: 5rem;
-}
-
-/*Styling Links*/
-.nav-links{
-    display: flex;
-    list-style: none; 
-    width: 88vw;
-    padding: 0 0.7vw;
-    justify-content: space-evenly;
-    align-items: center;
-    text-transform: uppercase;
-}
-.nav-links li a{
-    text-decoration: none;
-    margin: 0 0.7vw;
-}
-.nav-links li a:hover {
-    color: #61DAFB;
-}
-.nav-links li {
-    position: relative;
-}
-.nav-links li a::before {
-    content: "";
-    display: block;
-    height: 3px;
-    width: 0%;
-    background-color: #61DAFB;
-    position: absolute;
-    transition: all ease-in-out 250ms;
-    margin: 0 0 0 10%;
-}
-.nav-links li a:hover::before{
-    width: 80%;
-}
-
-/*Styling Buttons*/
-.login-button{
-    background-color: transparent;
-    border: 1.5px solid #f2f5f7;
-    border-radius: 2em;
-    padding: 0.6rem 0.8rem;
-    margin-left: 2vw;
-    font-size: 1rem;
-    cursor: pointer;
-
-}
-.login-button:hover {
-    color: #131418;
-    background-color: #f2f5f7;
-    border:1.5px solid #f2f5f7;
-    transition: all ease-in-out 350ms;
-}
-.join-button{
-    color: #131418;
-    background-color: #61DAFB;
-    border: 1.5px solid #61DAFB;
-    border-radius: 2em;
-    padding: 0.6rem 0.8rem;
-    font-size: 1rem;
-    cursor: pointer;
-}
-.join-button:hover {
-    color: #f2f5f7;
-    background-color: transparent;
-    border:1.5px solid #f2f5f7;
-    transition: all ease-in-out 350ms;
-}
-
-/*Styling Hamburger Icon*/
-.hamburger div{
-    width: 30px;
-    height:3px;
-    background: #f2f5f7;
-    margin: 5px;
-    transition: all 0.3s ease;
-}
-.hamburger{
-    display: none;
-}
-
-/*Stying for small screens*/
-@media screen and (max-width: 800px){
-    .login-button{
-        display: none;
-    }
-    .join-button{
-        display: none;
-    }
-    nav{
-        position: fixed;
-        z-index: 3;
-    }
-    .hamburger{
-        display:block;
-        position: absolute;
-        cursor: pointer;
-        right: 5%;
-        top: 50%;
-        transform: translate(-5%, -50%);
-        z-index: 2;
-        transition: all 0.7s ease;
-    }
-    .nav-links{
-        position: fixed;
-    background: #131418;
-    height: 100vh;
-    left: 3px;
-   
-    width: 109%;
-    top: 2px;
-    flex-direction: column;
-    clip-path: circle(50px at 90% -20%);
-    -webkit-clip-path: circle(50px at 90% -10%);
-    transition: all 1s ease-out;
-    pointer-events: none;
-    }
-    .nav-links.open{
-        clip-path: circle(1000px at 90% -10%);
-        -webkit-clip-path: circle(1000px at 90% -10%);
-        pointer-events: all;
-    }
-    .nav-links li{
-        opacity: 0;
-    }
-    .nav-links li:nth-child(1){
-        transition: all 0.5s ease 0.2s;
-    }
-    .nav-links li:nth-child(2){
-        transition: all 0.5s ease 0.4s;
-    }
-    .nav-links li:nth-child(3){
-        transition: all 0.5s ease 0.6s;
-    }
-    .nav-links li:nth-child(4){
-        transition: all 0.5s ease 0.7s;
-    }
-    .nav-links li:nth-child(5){
-        transition: all 0.5s ease 0.8s;
-    }
-    .nav-links li:nth-child(6){
-        transition: all 0.5s ease 0.9s;
-        margin: 0;
-    }
-    .nav-links li:nth-child(7){
-        transition: all 0.5s ease 1s;
-        margin: 0;
-    }
-    li.fade{
-        opacity: 1;
-    }
-}
-/*Animating Hamburger Icon on Click*/
-.toggle .line1{
-    transform: rotate(-45deg) translate(-5px,6px);
-}
-.toggle .line2{
-    transition: all 0.7s ease;
-    width:0;
-}
-.toggle .line3{
-    transform: rotate(45deg) translate(-5px,-6px);
-}
-    .video-card:hover .video-card-image{
-        display: none;
-    }
-  
-    .card-container::-webkit-scrollbar{
-display: none;
-    }
-    .watchlist-btn::before{
-        content: '';
-        position: absolute;
-        top: 4px;
-        left: 1px;
-        height: 35px;
-        width: 35px;
-        background-size: cover;
-        transform: scale(0.4);
-        background-image: url(img/add.png);
-    }
-    .watchlist-btn:hover{
-        color: #fff;
-    }
-    .card:hover .card-body:hover{
-        opacity: 1;
-    }
-    .pre-btn:hover img,.nxt-btn:hover img{
-        opacity: 1;
-    }
-    
-
-    .footer{
-	background-color: #24262b;
-    padding: 70px 0;
-}
-.footer-col{
-   width: 25%;
-   padding: 0 15px;
-}
-.footer-col h4{
-	font-size: 18px;
-	color: #ffffff;
-	text-transform: capitalize;
-	margin-bottom: 35px;
-	font-weight: 500;
-	position: relative;
-}
-.footer-col h4::before{
-	content: '';
-	position: absolute;
-	left:0;
-	bottom: -10px;
-	background-color: #e91e63;
-	height: 2px;
-	box-sizing: border-box;
-	width: 50px;
-}
-.footer-col ul li:not(:last-child){
-	margin-bottom: 10px;
-}
-.footer-col ul li a{
-	font-size: 16px;
-	text-transform: capitalize;
-	color: #ffffff;
-	text-decoration: none;
-	font-weight: 300;
-	color: #bbbbbb;
-	display: block;
-	transition: all 0.3s ease;
-}
-.footer-col ul li a:hover{
-	color: #ffffff;
-	padding-left: 8px;
-}
-.footer-col .social-links a{
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background-color: rgba(255,255,255,0.2);
-	margin:0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: #ffffff;
-	transition: all 0.5s ease;
-}
-.footer-col .social-links a:hover{
-	color: #24262b;
-	background-color: black;
-}
-
-/*responsive*/
-@media(max-width: 767px){
-  .footer-col{
-    width: 50%;
-    margin-bottom: 30px;
-}
-}
-@media(max-width: 574px){
-  .footer-col{
-    width: 100%;
-}
-}
-</style>
 <body class="m-0 p-0 box-border relative "  style="background-color: #00031c;font-family: 'Roboto',sans-serif;">
    <nav class="w-[100%] h-[80px] fixed top-0 left-0 py-0 px-[4%] z-[1000] flex items-center" style="background-color: #00031c;">
     <div class="logo z-[1000]">
@@ -341,9 +30,43 @@ display: none;
         <li><a href="#">Products</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Contact Us</a></li>
-        <li><button class="login-button" href="#">Login</button></li>
+
     
     </ul>
+    <div class="profile-dropdown">
+        <div onclick="toggle()" class="profile-dropdown-btn">
+          <div class="profile-img">
+            <i class="fa-solid fa-circle"></i>
+          </div>
+
+          <span
+            >Victoria
+            <i class="fa-solid fa-angle-down"></i>
+          </span>
+        </div>
+
+        <ul class="profile-dropdown-list">
+          <li class="profile-dropdown-list-item">
+            <a href="#">
+              <i class="fa-regular fa-user"></i>
+              Edit Profile
+            </a>
+          </li>
+
+         
+
+        
+         
+          <hr />
+
+          <li class="profile-dropdown-list-item">
+            <a href="#">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              Log out
+            </a>
+          </li>
+        </ul>
+      </div>
 </nav>
 <div class="relative w-[100%] h-[450px] py-[20px] px-[0px] overflow-x-hidden mt-[80px]">
     <div class=" carousel flex w-[92%] h-[100%] relative m-auto " style="background: rgba(0,0,0,0.1);">
@@ -358,28 +81,28 @@ display: none;
     </div>
 </div>
 <div class="relative w-[92%] m-auto h-[10vw] flex mb-[20px] justify-between">
-<div class="video-card relative h-[100%] rounded-[5px]  overflow-hidden" style="min-width: calc(100%/5 - 10px);width: calc(100%/5 - 10px);background: #030b17;">
-    <img src="./img/disney.PNG" alt="" class="video-card-image w-[100%] h-[100%] object-cover ">
-    <video src="./videos/disney.mp4" class="w-[100%] h-[100%] object-cover absolute"></video>
-</div>
-<div class="video-card relative h-[100%] rounded-[5px]  overflow-hidden" style="min-width: calc(100%/5 - 10px);width: calc(100%/5 - 10px);background: #030b17;">
-    <img src="./img/360_F_360066662_HP5c8JZZ2LnTkwrYR7You9P2kmE1dz4k.jpg" alt="" class="video-card-image w-[100%] h-[100%] object-cover ">
-    <video src="./videos/Dear Child - Official Trailer - Netflix.mp4" class="w-[100%] h-[100%] object-cover absolute"></video>
-</div>
-<div class="video-card relative h-[100%] rounded-[5px]  overflow-hidden" style="min-width: calc(100%/5 - 10px);width: calc(100%/5 - 10px);background: #030b17;">
-    <img src="./img/download (1).jpg" alt="" class="video-card-image w-[100%] h-[100%] object-cover ">
-    <video src="./videos/HBO Max_Logo Lockups.mp4" class="w-[100%] h-[100%] object-cover absolute"></video>
-</div>
-<div class="video-card relative h-[100%] rounded-[5px]  overflow-hidden" style="min-width: calc(100%/5 - 10px);width: calc(100%/5 - 10px);background: #030b17;">
-    <img src="./img/Hulu.jpg" alt="" class="video-card-image w-[100%] h-[100%] object-cover ">
-    <video src="./videos/Huluween Film Fest- The Hug • Now Streaming on Hulu.mp4" class="w-[100%] h-[100%] object-cover absolute"></video>
-</div>
-<div class="video-card relative h-[100%] rounded-[5px]  overflow-hidden" style="min-width: calc(100%/5 - 10px);width: calc(100%/5 - 10px);background: #030b17;">
-    <img src="./img/Appletv.jpg" alt="" class="video-card-image w-[100%] h-[100%] object-cover ">
-    <video src="./videos/The Changeling — Official Trailer - Apple TV+.mp4" class="w-[100%] h-[100%] object-cover absolute"></video>
-</div>
-
-</div>
+    <div class="video-card relative h-[100%] rounded-[5px]  overflow-hidden" style="min-width: calc(100%/5 - 10px);width: calc(100%/5 - 10px);background: #030b17;">
+        <img src="./images/disney.PNG" alt="" class="video-card-image w-[100%] h-[100%] object-cover ">
+        <video src="./videos/disney.mp4" class="w-[100%] h-[100%] object-cover absolute"></video>
+    </div>
+    <div class="video-card relative h-[100%] rounded-[5px]  overflow-hidden" style="min-width: calc(100%/5 - 10px);width: calc(100%/5 - 10px);background: #030b17;">
+        <img src="./images/netflix.jpg" alt="" class="video-card-image w-[100%] h-[100%] object-cover ">
+        <video src="./videos/Dear Child - Official Trailer - Netflix.mp4" class="w-[100%] h-[100%] object-cover absolute"></video>
+    </div>
+    <div class="video-card relative h-[100%] rounded-[5px]  overflow-hidden" style="min-width: calc(100%/5 - 10px);width: calc(100%/5 - 10px);background: #030b17;">
+        <img src="./images/HBO.jpg" alt="" class="video-card-image w-[100%] h-[100%] object-cover ">
+        <video src="./videos/HBO Max_Logo Lockups.mp4" class="w-[100%] h-[100%] object-cover absolute"></video>
+    </div>
+    <div class="video-card relative h-[100%] rounded-[5px]  overflow-hidden" style="min-width: calc(100%/5 - 10px);width: calc(100%/5 - 10px);background: #030b17;">
+        <img src="./images/Hulu.jpg" alt="" class="video-card-image w-[100%] h-[100%] object-cover ">
+        <video src="./videos/Huluween Film Fest- The Hug • Now Streaming on Hulu.mp4" class="w-[100%] h-[100%] object-cover absolute"></video>
+    </div>
+    <div class="video-card relative h-[100%] rounded-[5px]  overflow-hidden" style="min-width: calc(100%/5 - 10px);width: calc(100%/5 - 10px);background: #030b17;">
+        <img src="./images/Appletv.jpg" alt="" class="video-card-image w-[100%] h-[100%] object-cover ">
+        <video src="./videos/The Changeling — Official Trailer - Apple TV+.mp4" class="w-[100%] h-[100%] object-cover absolute"></video>
+    </div>
+    
+    </div>
 <h1 class="title text-white opacity-[0.9] pl-[4%] capitalize text-[22px] font-medium">recommanded for you</h1>
 <div class="movie-list w-[100%] h-[220px] relative " style="margin: 10px 0 20px;">
    
@@ -595,13 +318,10 @@ display: none;
     <div class="swiper-button-prev"><i class="fa fa-arrow-left" aria-hidden="true" style="color: white;"></i></div>
     <div class="swiper-button-next"><i class="fa fa-arrow-right" aria-hidden="true" style="color: white;"></i></div>
 </div>
-<section class="movie-banner" id="m_img" >
+<section class="movie-banner" data-aos="zoom-in" data-aos-duration="2000" id="movie-banner">
     <!-- ==img---------- -->
-    <div class="m-banner-img" >
-        <video autoplay muted loop id="myVideo">
-            <source src="./videos/disney.mp4" type="video/mp4">
-        
-          </video>
+    <div class="m-banner-img" id="m-banner-img" >
+        <img src="./img/disney-hotstar-logo-dark.svg" alt="">
     </div>
     <!-- --content================= -->
     <div class="banner-container">
@@ -630,29 +350,13 @@ display: none;
                 <strong>Category</strong><br>
                 <a href="#">Honnor</a>,<a href="#">Mistery</a>,<a href="#">Thriller</a>
             </div>
-            <a href="https://www.youtube.com/watch?v=Hgeu5rhoxxY" class="watch-btn">Watch trailer</a>
+           
         </div>
         </div>
             <!-- play-btn---------------- -->
-        <div class="play-btn-container">
-            <div class="play-btn">
-                <a href="javascript:void">
-                    <i class="fas fa-play"></i>
-                </a>
-            </div>
-        </div>
+        
         <!-- Video/full-movie -->
-        <div id="play" class="play-spider">
-            <!-- close-btn -->
-            <a href="javascript:void" class="close-movie">
-                <i class="fas fa-times"></i>
-            </a>
-            <div class="play-movie">
-                <video  id="m-video1" controls>
-                    <source src="/image/TRAILER MỚI! Spider-Man- Across the Spider-Verse, duy nhất tại rạp 01.06.2023..mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
+       
     </div>
 </section>
 <footer class="footer">
@@ -699,6 +403,7 @@ display: none;
     </div>
 </footer>
 <script src="./slider-data.js"></script>
+<script src="./main.js"></script>
 <script src="./app.js"></script>
 <script src="./Hambuger.js"></script>
 <script src="https://kit.fontawesome.com/8d355d0fd1.js" crossorigin="anonymous"></script>
