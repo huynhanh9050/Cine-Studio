@@ -479,7 +479,7 @@ display: none;
                     }
                     #nav{
                         top: 37vh;
-                        left
+                        left: -2vh;
                     }
                     .header-bottom .nav li .active:after {
     content: " ";
