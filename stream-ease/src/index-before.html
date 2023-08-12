@@ -68,7 +68,7 @@ nav{
     list-style: none; 
     width: 88vw;
     padding: 0 0.7vw;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     text-transform: uppercase;
 }
@@ -596,13 +596,10 @@ display: none;
     <div class="swiper-button-prev"><i class="fa fa-arrow-left" aria-hidden="true" style="color: white;"></i></div>
     <div class="swiper-button-next"><i class="fa fa-arrow-right" aria-hidden="true" style="color: white;"></i></div>
 </div>
-<section class="movie-banner" id="m_img" >
+<section class="movie-banner" data-aos="zoom-in" data-aos-duration="2000" id="movie-banner">
     <!-- ==img---------- -->
-    <div class="m-banner-img" >
-        <video autoplay muted loop id="myVideo">
-            <source src="./videos/disney.mp4" type="video/mp4">
-        
-          </video>
+    <div class="m-banner-img" id="m-banner-img" >
+        <img src="./img/disney-hotstar-logo-dark.svg" alt="">
     </div>
     <!-- --content================= -->
     <div class="banner-container">
@@ -631,29 +628,13 @@ display: none;
                 <strong>Category</strong><br>
                 <a href="#">Honnor</a>,<a href="#">Mistery</a>,<a href="#">Thriller</a>
             </div>
-            <a href="https://www.youtube.com/watch?v=Hgeu5rhoxxY" class="watch-btn">Watch trailer</a>
+           
         </div>
         </div>
             <!-- play-btn---------------- -->
-        <div class="play-btn-container">
-            <div class="play-btn">
-                <a href="javascript:void">
-                    <i class="fas fa-play"></i>
-                </a>
-            </div>
-        </div>
+        
         <!-- Video/full-movie -->
-        <div id="play" class="play-spider">
-            <!-- close-btn -->
-            <a href="javascript:void" class="close-movie">
-                <i class="fas fa-times"></i>
-            </a>
-            <div class="play-movie">
-                <video  id="m-video1" controls>
-                    <source src="/image/TRAILER MỚI! Spider-Man- Across the Spider-Verse, duy nhất tại rạp 01.06.2023..mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
+       
     </div>
 </section>
 <footer class="footer">
@@ -705,4 +686,4 @@ display: none;
 <script src="https://kit.fontawesome.com/8d355d0fd1.js" crossorigin="anonymous"></script>
 </body>
 </div>
-</html>
+</html> 
