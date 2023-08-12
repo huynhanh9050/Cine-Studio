@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./style.css">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="./playlist.css">
+<link rel="stylesheet" href="./after_login.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Metrophobic&family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
@@ -18,7 +19,7 @@
 <body class=" "  style="background-color: #00031c;font-family: 'Roboto',sans-serif;">
     <nav class="w-[100%] h-[80px] fixed top-0 left-0 py-0 px-[4%] z-[1000] flex items-center" style="background-color: #00031c;">
         <div class="logo z-[1000]">
-            <img src="./img/Screenshot_2023-08-09_172416-removebg-preview (1).png" alt="Logo Image">
+            <a href="./index-after.html"><img src="./img/Screenshot_2023-08-09_172416-removebg-preview (1).png" alt="Logo Image"></a>
         </div>
         <div class="hamburger">
             <div class="line1"></div>
@@ -26,14 +27,55 @@
             <div class="line3"></div>
         </div>
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
+            <li><a href="./index-after.html">Home</a></li>
             <li><a href="#">Solutions</a></li>
-            <li><a href="#">Products</a></li>   
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact Us</a></li>
-
+            <li><a href="#">Products</a></li>
+            <li><a href="./aboutus.html">About</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+    
         
         </ul>
+        <div class="profile-dropdown">
+            <div onclick="toggle()" class="profile-dropdown-btn">
+              <div class="profile-img">
+                <i class="fa-solid fa-circle"></i>
+              </div>
+    
+              <span
+                >Victoria
+                <i class="fa-solid fa-angle-down"></i>
+              </span>
+            </div>
+    
+            <ul class="profile-dropdown-list">
+              <li class="profile-dropdown-list-item">
+                <a href="./user_page.html">
+                  <i class="fa-regular fa-user"></i>
+                   Profile
+                </a>
+              </li>
+    
+             
+    
+            
+             
+              <hr />
+    
+              <li class="profile-dropdown-list-item">
+                <a href="#">
+                  <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                  Log out
+                </a>
+              </li>
+            </ul>
+          </div>
+          <form action="" class="search-box">
+            <input type="text" name="search" placeholder="search Movie" class="search-input" required>
+            <!--  btn-->
+            <button type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
     </nav>
     <div class="relative w-[100%] h-[259px] py-[20px] px-[0px] overflow-x-hidden mt-[80px] " style="background-color: #191c33;padding: 65px 15px 0px;" >
         <div class="user-profile">
@@ -47,10 +89,10 @@
        <div class="row header-bottom ">
         <div class="col-xl-8 col-lg-8 col-12 col-12 h-left">
             <ul id="nav" class="nav absolute top-[30vh] flex ml-[6vh] ">
-                <li id="nav-count" class="nav-item nav-favorites ml-[8vh] "><a href="" class="item-favorites "><span class="menu-text font-[inherit] font-bold">Favorites</span></a></li>
-                <li id="nav-count" class="nav-item nav-favorites  ml-[8vh]"><a href="" class="item-favorites active"><span class="menu-text font-[inherit] font-bold">Playlist</span></a></li> 
-                <li id="nav-count" class="nav-item nav-favorites  ml-[8vh]"><a href="" class="item-favorites "><span class="menu-text font-[inherit] font-bold">Watchlist</span></a></li> 
-                <li id="nav-count" class="nav-item nav-favorites  ml-[8vh]"><a href="" class="item-favorites"><span class="menu-text font-[inherit] font-bold">Videos</span></a></li> 
+                <li id="nav-count" class="nav-item nav-favorites ml-[8vh] "><a href="./user_page.html" class="item-favorites "><span class="menu-text font-[inherit] font-bold">Favorites</span></a></li>
+                <li id="nav-count" class="nav-item nav-favorites  ml-[8vh]"><a href="./playlist.html" class="item-favorites active"><span class="menu-text font-[inherit] font-bold">Playlist</span></a></li> 
+                <li id="nav-count" class="nav-item nav-favorites  ml-[8vh]"><a href="./watchlist.html" class="item-favorites "><span class="menu-text font-[inherit] font-bold">Watchlist</span></a></li> 
+                <li id="nav-count" class="nav-item nav-favorites  ml-[8vh]"><a href="./video.html" class="item-favorites"><span class="menu-text font-[inherit] font-bold">Videos</span></a></li> 
             </ul>
         </div>
        </div>
@@ -105,5 +147,6 @@
     </footer>
     <script src="https://kit.fontawesome.com/8d355d0fd1.js" crossorigin="anonymous"></script>
     <script src="./Hambuger.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>
