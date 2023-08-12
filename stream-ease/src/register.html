@@ -16,7 +16,7 @@
     <div class="container-fluid mx-auto my-auto flex justify-center items-center w-full h-full object-cover object-center absolute" id="form_style">
       <div class="w-1/3 bg-white p-4 rounded-md opacity-80">
         <h1 class="text-center font-bold md:text-xl break-words max-w-full">Register</h1>
-        <form action="login.html" method="post">
+        <form action="./login.html" method="post">
           <div class="mb-4">
             <label for="username" class="text-sm font-medium break-words max-w-full required:">Username</label>
             <input type="text" name="username" id="username" class="w-full rounded-md py-2 px-3 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500">
@@ -54,6 +54,7 @@
         var password = document.getElementById("password").value;
         if(password=="")return  alert('Please Enter Password')
         alert('Create Account Success')
+          window.location.href='./login.html';
       }
     </script>
   </body>
