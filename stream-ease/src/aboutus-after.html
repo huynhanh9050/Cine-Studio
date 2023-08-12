@@ -129,38 +129,6 @@
         transition: all ease 0.5s;
         color: #fff;
     }
-
-    .loader {
-        font-size: 2rem;
-        font-variant: small-caps;
-        background: conic-gradient(#dff2ae 0 25%,
-                #f990f4 25% 50%,
-                #feefe7 50% 75%,
-                #ffde2b 75%);
-        background-size: 200% 200%;
-        animation: animate 4.3s ease-in-out infinite;
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-    }
-
-    @keyframes animate {
-        25% {
-            background-position: 0 100%;
-        }
-
-        50% {
-            background-position: 100% 100%;
-        }
-
-        75% {
-            background-position: 100% 0;
-        }
-
-        100% {
-            background-position: 0 0;
-        }
-    }
     .swiper-button-next,.swiper-button-prev{
     position: static !important;
     transform: translate(0,0);
@@ -270,12 +238,6 @@ nav{
     font-size: 1rem;
     cursor: pointer;
 }
-.nav-links .active a{
-    color: #61DAFB;
-}
-.nav-links .active a::before{
-    width: 80%;
-}
 .join-button:hover {
     color: #f2f5f7;
     background-color: transparent;
@@ -371,7 +333,7 @@ nav{
 <body>
     <nav class="w-[100%] h-[80px] fixed top-0 left-0 py-0 px-[4%] z-[1000] flex items-center" style="background-color: #00031c;">
         <div class="logo z-[1000]">
-            <a href="./index-before.html"><img src="./img/Screenshot_2023-08-09_172416-removebg-preview (1).png" alt="Logo Image"></a>
+            <img src="./img/Screenshot_2023-08-09_172416-removebg-preview (1).png" alt="Logo Image">
         </div>
         <div class="hamburger">
             <div class="line1"></div>
@@ -379,15 +341,14 @@ nav{
             <div class="line3"></div>
         </div>
         <ul class="nav-links">
-            <li><a href="./index-before.html">Home</a></li>
+            <li><a href="./index-after.html">Home</a></li>
             <li><a href="#">Solutions</a></li>
             <li><a href="#">Products</a></li>
-            <li class="active"><a href="./aboutus.html">About</a></li>
-            <li><a href="./contact.html">Contact Us</a></li>
-     
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><button class="login-button" href="#">Login</button></li>
         
         </ul>
-        <a class="login-button" href="./login.html">Login</a>
         <form action="" class="search-box">
             <input type="text" name="search" placeholder="search Movie" class="search-input" required>
             <!--  btn-->
@@ -405,7 +366,7 @@ nav{
     <div class="min-w-full min-h-full">
         <div class="row w-full relative">
             <div class="text-white min-w-full text-center font-[REM]">
-                <h1 class="mt-28 text-6xl loader">About Us</h1>
+                <h1 class="mt-28 text-6xl">About Us</h1>
                 <div class="text-gray-400 mt-3 break-words w-5/12 mx-auto leading-8">
                     <p>
                         We are the ultimate digital network for all things movies, serving more than 60 million unique
@@ -540,8 +501,7 @@ nav{
                         Subscribe for $5.99/ Month. Cancel anytime.
                     </p>
                     <a id="home" href="./aboutus.html">
-                        <button class="bg-violet-600 text-white rounded-lg py-2 px-4 mt-12"><b>Start Free
-                                Trial</b></button>
+                        <button class="bg-violet-600 text-white rounded-lg py-2 px-4 mt-12"><b>Start Free Trial</b></button>
                     </a>
                 </div>
             </div>
@@ -553,40 +513,35 @@ nav{
         </div>
         <div class="row w-11/12 relative ml-28 break-words mt-4">
             <div class="col-3 mt-4 m-0 text-center">
-                <img src="images/anhkhoa.jpg" alt="" border="bottom-right-radius: 300px;"
-                    class="rounded-full mx-auto w-10/12 h-4/6" width="200" height="200">
+                <img src="images/anhkhoa.jpg" alt="" border="bottom-right-radius: 300px;" class="rounded-full mx-auto w-10/12 h-4/6" width="200" height="200">
                 <h3 class="mt-4 text-violet-500"><b>Le Huynh Anh Khoa</b></h3>
                 <div class="text-gray-400 mt-4">
                     <p>Developer</p>
                 </div>
             </div>
             <div class="col-3 mt-4 m-0 text-center">
-                <img src="images/cong.jpg" alt="" border="bottom-right-radius: 300px;"
-                    class="rounded-full mx-auto w-10/12 h-4/6" width="200" height="200">
+                <img src="images/cong.jpg" alt="" border="bottom-right-radius: 300px;" class="rounded-full mx-auto w-10/12 h-4/6" width="200" height="200">
                 <h3 class="text-white mt-4"><b>Nguyen Thanh Cong</b></h3>
                 <div class="text-violet-500 mt-4">
                     <p>Developer</p>
                 </div>
             </div>
             <div class="col-3 mt-4 m-0 text-center">
-                <img src="images/quoc.jpg" alt="" border="bottom-right-radius: 300px;"
-                    class="rounded-full mx-auto w-10/12 h-4/6" width="200" height="200">
+                <img src="images/quoc.jpg" alt="" border="bottom-right-radius: 300px;" class="rounded-full mx-auto w-10/12 h-4/6" width="200" height="200">
                 <h3 class="text-violet-500 mt-4"><b>Vo Tan Nam Quoc</b></h3>
                 <div class="text-gray-400 mt-4">
                     <p>Developer</p>
                 </div>
             </div>
             <div class="col-3 mt-4 m-0 text-center">
-                <img src="images/phong.jpg" alt="" border="bottom-right-radius: 300px;"
-                    class="rounded-full mx-auto w-10/12 h-4/6" width="200" height="200">
+                <img src="images/phong.jpg" alt="" border="bottom-right-radius: 300px;" class="rounded-full mx-auto w-10/12 h-4/6" width="200" height="200">
                 <h3 class="text-white mt-4"><b>Tran Nguyen Thanh Phong</b></h3>
                 <div class="text-violet-500 mt-4">
                     <p>Developer</p>
                 </div>
             </div>
         </div>
-        <div
-            class="row w-11/12 relative ml-28 break-words font-[REM] bg-violet-600 px-auto rounded-2xl py-6 leading-10 pl-8">
+        <div class="row w-11/12 relative ml-28 break-words font-[REM] bg-violet-600 px-auto rounded-2xl py-6 leading-10 pl-8">
             <div class="w-6/12 pt-3 h-auto text-justify">
                 <div class="text-white min-w-full mt-0">
                     <h1 class="text-3xl text-left pl-8"><b>Let’s Work Together</b></h1>
@@ -602,10 +557,10 @@ nav{
                     </a>
                 </div>
             </div>
-
-
+            
+            
         </div>
-
+        
     </div>
 
   

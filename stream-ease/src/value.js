@@ -110,7 +110,7 @@ let movie=[
         overview:'Andy Dufresne, a banker who is wrongly convicted of murdering his wife and her lover, is sentenced to life in Shawshank State Penitentiary. There, he befriends Ellis "Red" Redding and together they endure the challenges of prison life.',
         country:1,
         brand:[2],
-        img:'film1.jpg',
+        img:'./images/film1.jpg',
         video:''
     },
     {
@@ -358,6 +358,6 @@ let director=[
       {
         id: 13,
         name:  "Sergio Leone",
-        age: 86 (deceased)
+        age: 86
       }
 ]

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Price</title>
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./button_submit.css">
+    <link rel="stylesheet" href="./before_login.css">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body ng-app="myApp" ng-controller="myCtrl">
+    <nav class="w-[100%] h-[80px] fixed top-0 left-0 py-0 px-[4%] z-[1000] flex items-center" style="background-color: #00031c;">
+        <div class="logo z-[1000]">
+            <a href="./index-before.html"><img src="./images/icon.png" alt="Logo Image"></a>
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <li class="active"><a href="./index-before.html">Home</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Products</a>
+                <ul class="dropdown">
+                    <li class="dropwdown1"><a href="#">Sub-1</a></li>
+                    <li class="dropwdown1"><a href="#">Sub-2</a></li>
+                    <li class="dropwdown1"><a href="#">Sub-3</a></li>
+                  </ul>
+            </li>
+            <li><a href="./aboutus.html">About</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+       
+        
+        </ul>
+        <a class="login-button" href="./login.html">Login</a>
+         <form action="" class="search-box">
+                <input type="text" name="search" placeholder="search Movie" class="search-input" required>
+                <!--  btn-->
+                <button type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
+    </nav>
+    <img src="./images/image-login.jpg" class="min-w-full min-h-full fixed object-cover" alt="">
+    <div class="bg-cover fixed w-full opacity-90 h-full" style="background-color: #00031C;"></div>
+    <div ng-repeat="brd in brand">
+        <div class="relative min-w-full opacity-80" style="border: 1px solid; border-radius: 23px">
+            <div class="min-w-full relative text-white text-center text-3xl">{{brd.name}}</div>
+            <div class="columns-3 relative mt-12">
+                <div class="w-6/12 text-white mx-auto mt-4 px-10">
+                    <h1 class="text-center text-xl">GOLDEN PLAN</h1>
+                    <h1 class="text-center text-3xl">{{brd.GoldenPlan}}</h1>
+                    <ul>
+                        <li>Get unlimited access to thousands of shows and movies with limited ads</li>
+                        <li>Watch on your favorite devices</li>
+                        <li>Switch plans or cancel anytime</li>
+                        <li>Download from thousands of titles to watch offline</li>
+                    </ul>
+                    <a href="#" onclick="alert('You Buy Golden Plan Success')" type="Submit" class="rounded-md  break-words max-w-full p-0 py-3">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Choose Plan
+                    </a>
+                </div>
+                <div class="w-6/12 h-full text-white mx-auto mt-4 bg-blue-950 px-10" style="border-radius: 23px">
+                    <h1 class="text-center text-2xl">DIAMOND PLAN</h1>
+                    <h1 class="text-center text-3xl">{{brd.DiamondPlan}}</h1>
+                    <ul>
+                        <li>Get unlimited access to thousands of shows and movies with limited ads</li>
+                        <li>Watch on your favorite devices</li>
+                        <li>Switch plans or cancel anytime</li>
+                        <li>Download from thousands of titles to watch offline</li>
+                    </ul>
+                    <a href="#" onclick="alert('You Buy Diamond Plan Success')" type="Submit" class="rounded-md  break-words max-w-full p-0 py-3">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Choose Plan
+                    </a>
+                </div>
+                <div class="w-6/12 text-white mt-4 mx-auto px-10">
+                    <h1 class="text-center text-2xl">PLATINUM PLAN</h1>
+                    <h1 class="text-center text-3xl">{{brd.PlatinumPlan}}</h1>
+                    <ul>
+                        <li>Get unlimited access to thousands of shows and movies with limited ads</li>
+                        <li>Watch on your favorite devices</li>
+                        <li>Switch plans or cancel anytime</li>
+                        <li>Download from thousands of titles to watch offline</li>
+                    </ul>
+                    <a href="#" onclick="alert('You Buy Platinum Plan Success')" type="Submit" class="rounded-md  break-words max-w-full p-0 py-3">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Choose Plan
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/8d355d0fd1.js"crossorigin="anonymous"></script>
+    <script src="../node_modules/angular/angular.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        var myApp=angular.module('myApp',[]);
+        myApp.controller('myCtrl',function ($scope){
+            $scope.brand=[
+                {
+                    id:1,
+                    name:'Netflix',
+                    img:'netflix.jpg',
+                    GoldenPlan:'30$/year',
+                    DiamondPlan:'60$/year',
+                    PlatinumPlan:'70$/year'
+                },
+                {
+                    id: 2,
+                    name:"Amazon Prime",
+                    img:'',
+                    GoldenPlan:'33$/6 month',
+                    DiamondPlan:'23$/month',
+                    PlatinumPlan:'70$/year'
+                },
+                {
+                    id: 3,
+                    name:"HBO Max",
+                    img:'HBO.jpg',
+                    GoldenPlan:'23$/6 month',
+                    DiamondPlan:'15$/month',
+                    PlatinumPlan:'75$/year'
+                },
+                {
+                    id: 4,
+                    name:"Disney+",
+                    img:'disney.png',
+                    GoldenPlan:'23$/6 month',
+                    DiamondPlan:'20$/month',
+                    PlatinumPlan:'83$/year'
+                },
+                {
+                    id: 5,
+                    name:'VieOn',
+                    img:'',
+                    GoldenPlan:'3$/month',
+                    DiamondPlan:'13$/3 month',
+                    PlatinumPlan:'43$/year'
+                },
+                {
+                    id: 6,
+                    name:'FPT Play',
+                    img:'',
+                    GoldenPlan:'1$/month',
+                    DiamondPlan:'3$/month',
+                    PlatinumPlan:'33$/year'
+                },
+                {
+                    id: 7,
+                    name:'Hulu',
+                    img:'Hulu.jpg',
+                    GoldenPlan:'13$/month',
+                    DiamondPlan:'15$/month',
+                    PlatinumPlan:'75$/year'
+                },
+                {
+                    id: 8,
+                    name:'Apple Tv',
+                    img:'Appletv.jpg',
+                    GoldenPlan:'23$/6 month',
+                    DiamondPlan:'3$ /month',
+                    PlatinumPlan:'78$/year'
+                }
+            ];
+        });
+    </script>
+  </body>
+</html>
