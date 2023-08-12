@@ -110,7 +110,8 @@
                 text-overflow: ellipsis;
                 white-space: nowrap;
                 overflow: hidden;">{{resource.overview}}</h6>
-                <a href="#"><button id="home" class="watchlist-btn absolute w-[100%] capitalize bg-none font-medium border-none text-right  cursor-pointer py-[10px] px-[5px] rounded-[5px] " style="color: rgba(255, 255, 255, 0.5);margin: 5px -21px;">add to watchlist</button></a>
+                <a href="#"><button id="home" class="watchlist-btn absolute w-[100%] capitalize bg-none font-medium border-none text-right  cursor-pointer py-[10px] px-[5px] rounded-[5px] " style="    color: rgba(255, 255, 255, 0.5);
+                    margin: 131px -149px;">add to watchlist</button></a>
             </div>
         </div>
     
@@ -126,101 +127,32 @@
    
 
     <div class="card-container absolute w-[92%] pl-[4%] h-[220px] flex my-0 mx-auto overflow-x-auto overflow-y-visible scroll-smooth items-center">
-        <div class="card relative min-w-[150px] w-[150px] h-[200px] rounded-[5px] overflow-hidden mr-[10px] transition-[0.5s] hover:scale-[1.1] " style="background: #030b17;">
-            <img src="./img/poster 1.png" alt="" class="w-[100%] h-[100%] object-cover">
+        <div ng-repeat="resource in employees " class="card relative min-w-[150px] w-[150px] h-[200px] rounded-[5px] overflow-hidden mr-[10px] transition-[0.5s] hover:scale-[1.1] " style="background: #030b17;">
+            <img ng-src="./images/{{ resource.img }}" alt="{{resource.title }}" class="w-[100%] h-[100%] object-cover">
             <div class=" card-body w-[100%] h-[100%] absolute top-0 left-0 z-[2] p-[10px] opacity-0" style="background: linear-gradient(to bottom,rgba(4,8,15,0),#192131 90%);transition: 0.5s;">
-                <h2 class="text-white text-[15px] font-medium capitalize mt-[60%]">Movie Name</h2>
-                <h6 class="des text-white opacity-[0.8] my-[5px] mx-0 font-medium text-[12px]">Lorem ipsum, dolor sit amet consectetur.</h6>
-                <a href="#"><button id="home" class="watchlist-btn absolute w-[100%] capitalize bg-none font-medium border-none text-right  cursor-pointer py-[10px] px-[5px] rounded-[5px] " style="color: rgba(255, 255, 255, 0.5);margin: 5px -21px;">add to watchlist</button></a>
+                <h2 class="text-white text-[15px] font-medium capitalize mt-[60%]" style="font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                margin-bottom: 1px;
+                width: 100%;
+                float: left;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;">{{resource.title}}</h2>
+                <h6 class="des text-white opacity-[0.8] my-[5px] mx-0 font-medium text-[12px]" style="font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                margin-bottom: 1px;
+                width: 100%;
+                float: left;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;">{{resource.overview}}</h6>
+                <a href="#"><button id="home" class="watchlist-btn absolute w-[100%] capitalize bg-none font-medium border-none text-right  cursor-pointer py-[10px] px-[5px] rounded-[5px] " style="    color: rgba(255, 255, 255, 0.5);
+                    margin: 131px -149px;">add to watchlist</button></a>
             </div>
         </div>
-        <div class="card relative min-w-[150px] w-[150px] h-[200px] rounded-[5px] overflow-hidden mr-[10px] transition-[0.5s] hover:scale-[1.1] " style="background: #030b17;">
-            <img src="./img/poster 2.png" alt="" class="w-[100%] h-[100%] object-cover">
-            <div class=" card-body w-[100%] h-[100%] absolute top-0 left-0 z-[2] p-[10px] opacity-0" style="background: linear-gradient(to bottom,rgba(4,8,15,0),#192131 90%);transition: 0.5s;">
-                <h2 class="text-white text-[15px] font-medium capitalize mt-[60%]">Movie Name</h2>
-                <h6 class="des text-white opacity-[0.8] my-[5px] mx-0 font-medium text-[12px]">Lorem ipsum, dolor sit amet consectetur.</h6>
-                <a href="#"><button id="home" class="watchlist-btn absolute w-[100%] capitalize bg-none font-medium border-none text-right  cursor-pointer py-[10px] px-[5px] rounded-[5px] " style="color: rgba(255, 255, 255, 0.5);margin: 5px -21px;">add to watchlist</button></a>
-            </div>
-        </div>
-        <div class="card relative min-w-[150px] w-[150px] h-[200px] rounded-[5px] overflow-hidden mr-[10px] transition-[0.5s] hover:scale-[1.1] " style="background: #030b17;">
-            <img src="./img/poster 3.png" alt="" class="w-[100%] h-[100%] object-cover">
-            <div class=" card-body w-[100%] h-[100%] absolute top-0 left-0 z-[2] p-[10px] opacity-0" style="background: linear-gradient(to bottom,rgba(4,8,15,0),#192131 90%);transition: 0.5s;">
-                <h2 class="text-white text-[15px] font-medium capitalize mt-[60%]">Movie Name</h2>
-                <h6 class="des text-white opacity-[0.8] my-[5px] mx-0 font-medium text-[12px]">Lorem ipsum, dolor sit amet consectetur.</h6>
-                <a href="#"><button id="home" class="watchlist-btn absolute w-[100%] capitalize bg-none font-medium border-none text-right  cursor-pointer py-[10px] px-[5px] rounded-[5px] " style="color: rgba(255, 255, 255, 0.5);margin: 5px -21px;">add to watchlist</button></a>
-            </div>
-        </div>
-        <div class="card relative min-w-[150px] w-[150px] h-[200px] rounded-[5px] overflow-hidden mr-[10px] transition-[0.5s] hover:scale-[1.1] " style="background: #030b17;">
-            <img src="./img/poster 4.png" alt="" class="w-[100%] h-[100%] object-cover">
-            <div class=" card-body w-[100%] h-[100%] absolute top-0 left-0 z-[2] p-[10px] opacity-0" style="background: linear-gradient(to bottom,rgba(4,8,15,0),#192131 90%);transition: 0.5s;">
-                <h2 class="text-white text-[15px] font-medium capitalize mt-[60%]">Movie Name</h2>
-                <h6 class="des text-white opacity-[0.8] my-[5px] mx-0 font-medium text-[12px]">Lorem ipsum, dolor sit amet consectetur.</h6>
-                <a href="#"><button id="home" class="watchlist-btn absolute w-[100%] capitalize bg-none font-medium border-none text-right  cursor-pointer py-[10px] px-[5px] rounded-[5px] " style="color: rgba(255, 255, 255, 0.5);margin: 5px -21px;">add to watchlist</button></a>
-            </div>
-        </div>
-        <div class="card relative min-w-[150px] w-[150px] h-[200px] rounded-[5px] overflow-hidden mr-[10px] transition-[0.5s] hover:scale-[1.1] " style="background: #030b17;">
-            <img src="./img/poster 5.png" alt="" class="w-[100%] h-[100%] object-cover">
-            <div class=" card-body w-[100%] h-[100%] absolute top-0 left-0 z-[2] p-[10px] opacity-0" style="background: linear-gradient(to bottom,rgba(4,8,15,0),#192131 90%);transition: 0.5s;">
-                <h2 class="text-white text-[15px] font-medium capitalize mt-[60%]">Movie Name</h2>
-                <h6 class="des text-white opacity-[0.8] my-[5px] mx-0 font-medium text-[12px]">Lorem ipsum, dolor sit amet consectetur.</h6>
-                <a href="#"><button id="home" class="watchlist-btn absolute w-[100%] capitalize bg-none font-medium border-none text-right  cursor-pointer py-[10px] px-[5px] rounded-[5px] " style="color: rgba(255, 255, 255, 0.5);margin: 5px -21px;">add to watchlist</button></a>
-            </div>
-        </div>
-        <div class="card relative min-w-[150px] w-[150px] h-[200px] rounded-[5px] overflow-hidden mr-[10px] transition-[0.5s] hover:scale-[1.1] " style="background: #030b17;">
-            <img src="./img/poster 6.png" alt="" class="w-[100%] h-[100%] object-cover">
-            <div class=" card-body w-[100%] h-[100%] absolute top-0 left-0 z-[2] p-[10px] opacity-0" style="background: linear-gradient(to bottom,rgba(4,8,15,0),#192131 90%);transition: 0.5s;">
-                <h2 class="text-white text-[15px] font-medium capitalize mt-[60%]">Movie Name</h2>
-                <h6 class="des text-white opacity-[0.8] my-[5px] mx-0 font-medium text-[12px]">Lorem ipsum, dolor sit amet consectetur.</h6>
-                <a href="#"><button id="home" class="watchlist-btn absolute w-[100%] capitalize bg-none font-medium border-none text-right  cursor-pointer py-[10px] px-[5px] rounded-[5px] " style="color: rgba(255, 255, 255, 0.5);margin: 5px -21px;">add to watchlist</button></a>
-            </div>
-        </div>
-        <div class="card relative min-w-[150px] w-[150px] h-[200px] rounded-[5px] overflow-hidden mr-[10px] transition-[0.5s] hover:scale-[1.1] " style="background: #030b17;">
-            <img src="./img/poster 7.png" alt="" class="w-[100%] h-[100%] object-cover">
-            <div class=" card-body w-[100%] h-[100%] absolute top-0 left-0 z-[2] p-[10px] opacity-0" style="background: linear-gradient(to bottom,rgba(4,8,15,0),#192131 90%);transition: 0.5s;">
-                <h2 class="text-white text-[15px] font-medium capitalize mt-[60%]">Movie Name</h2>
-                <h6 class="des text-white opacity-[0.8] my-[5px] mx-0 font-medium text-[12px]">Lorem ipsum, dolor sit amet consectetur.</h6>
-                <a href="#"><button id="home" class="watchlist-btn absolute w-[100%] capitalize bg-none font-medium border-none text-right  cursor-pointer py-[10px] px-[5px] rounded-[5px] " style="color: rgba(255, 255, 255, 0.5);margin: 5px -21px;">add to watchlist</button></a>
-            </div>
-        </div>
-        <div class="card relative min-w-[150px] w-[150px] h-[200px] rounded-[5px] overflow-hidden mr-[10px] transition-[0.5s] hover:scale-[1.1] " style="background: #030b17;">
-            <img src="./img/poster 8.png" alt="" class="w-[100%] h-[100%] object-cover">
-            <div class=" card-body w-[100%] h-[100%] absolute top-0 left-0 z-[2] p-[10px] opacity-0" style="background: linear-gradient(to bottom,rgba(4,8,15,0),#192131 90%);transition: 0.5s;">
-                <h2 class="text-white text-[15px] font-medium capitalize mt-[60%]">Movie Name</h2>
-                <h6 class="des text-white opacity-[0.8] my-[5px] mx-0 font-medium text-[12px]">Lorem ipsum, dolor sit amet consectetur.</h6>
-                <a href="#"><button id="home" class="watchlist-btn absolute w-[100%] capitalize bg-none font-medium border-none text-right  cursor-pointer py-[10px] px-[5px] rounded-[5px] " style="color: rgba(255, 255, 255, 0.5);margin: 5px -21px;">add to watchlist</button></a>
-            </div>
-        </div>
-        <div class="card relative min-w-[150px] w-[150px] h-[200px] rounded-[5px] overflow-hidden mr-[10px] transition-[0.5s] hover:scale-[1.1] " style="background: #030b17;">
-            <img src="./img/poster 9.png" alt="" class="w-[100%] h-[100%] object-cover">
-            <div class=" card-body w-[100%] h-[100%] absolute top-0 left-0 z-[2] p-[10px] opacity-0" style="background: linear-gradient(to bottom,rgba(4,8,15,0),#192131 90%);transition: 0.5s;">
-                <h2 class="text-white text-[15px] font-medium capitalize mt-[60%]">Movie Name</h2>
-                <h6 class="des text-white opacity-[0.8] my-[5px] mx-0 font-medium text-[12px]">Lorem ipsum, dolor sit amet consectetur.</h6>
-                <a href="#"><button id="home" class="watchlist-btn absolute w-[100%] capitalize bg-none font-medium border-none text-right  cursor-pointer py-[10px] px-[5px] rounded-[5px] " style="color: rgba(255, 255, 255, 0.5);margin: 5px -21px;">add to watchlist</button></a>
-            </div>
-        </div>
-        <div class="card relative min-w-[150px] w-[150px] h-[200px] rounded-[5px] overflow-hidden mr-[10px] transition-[0.5s] hover:scale-[1.1] " style="background: #030b17;">
-            <img src="./img/poster 10.png" alt="" class="w-[100%] h-[100%] object-cover">
-            <div class=" card-body w-[100%] h-[100%] absolute top-0 left-0 z-[2] p-[10px] opacity-0" style="background: linear-gradient(to bottom,rgba(4,8,15,0),#192131 90%);transition: 0.5s;">
-                <h2 class="text-white text-[15px] font-medium capitalize mt-[60%]">Movie Name</h2>
-                <h6 class="des text-white opacity-[0.8] my-[5px] mx-0 font-medium text-[12px]">Lorem ipsum, dolor sit amet consectetur.</h6>
-                <a href="#"><button id="home" class="watchlist-btn absolute w-[100%] capitalize bg-none font-medium border-none text-right  cursor-pointer py-[10px] px-[5px] rounded-[5px] " style="color: rgba(255, 255, 255, 0.5);margin: 5px -21px;">add to watchlist</button></a>
-            </div>
-        </div>
-        <div class="card relative min-w-[150px] w-[150px] h-[200px] rounded-[5px] overflow-hidden mr-[10px] transition-[0.5s] hover:scale-[1.1] " style="background: #030b17;">
-            <img src="./img/poster 11.png" alt="" class="w-[100%] h-[100%] object-cover">
-            <div class=" card-body w-[100%] h-[100%] absolute top-0 left-0 z-[2] p-[10px] opacity-0" style="background: linear-gradient(to bottom,rgba(4,8,15,0),#192131 90%);transition: 0.5s;">
-                <h2 class="text-white text-[15px] font-medium capitalize mt-[60%]">Movie Name</h2>
-                <h6 class="des text-white opacity-[0.8] my-[5px] mx-0 font-medium text-[12px]">Lorem ipsum, dolor sit amet consectetur.</h6>
-                <a href="#"><button id="home" class="watchlist-btn absolute w-[100%] capitalize bg-none font-medium border-none text-right  cursor-pointer py-[10px] px-[5px] rounded-[5px] " style="color: rgba(255, 255, 255, 0.5);margin: 5px -21px;">add to watchlist</button></a>
-            </div>
-        </div>
-        <div class="card relative min-w-[150px] w-[150px] h-[200px] rounded-[5px] overflow-hidden mr-[10px] transition-[0.5s] hover:scale-[1.1] " style="background: #030b17;">
-            <img src="./img/poster 12.png" alt="" class="w-[100%] h-[100%] object-cover">
-            <div class=" card-body w-[100%] h-[100%] absolute top-0 left-0 z-[2] p-[10px] opacity-0" style="background: linear-gradient(to bottom,rgba(4,8,15,0),#192131 90%);transition: 0.5s;">
-                <h2 class="text-white text-[15px] font-medium capitalize mt-[60%]">Movie Name</h2>
-                <h6 class="des text-white opacity-[0.8] my-[5px] mx-0 font-medium text-[12px]">Lorem ipsum, dolor sit amet consectetur.</h6>
-                <a href="#"><button id="home" class="watchlist-btn absolute w-[100%] capitalize bg-none font-medium border-none text-right  cursor-pointer py-[10px] px-[5px] rounded-[5px] " style="color: rgba(255, 255, 255, 0.5);margin: 5px -21px;">add to watchlist</button></a>
-            </div>
+        
         </div>
     </div>
 </div>
