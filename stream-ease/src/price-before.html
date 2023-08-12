@@ -8,8 +8,43 @@
     <link rel="stylesheet" href="../dist/output.css" />
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./button_submit.css">
+    <link rel="stylesheet" href="./before_login.css">
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body ng-app="myApp" ng-controller="myCtrl">
+    <nav class="w-[100%] h-[80px] fixed top-0 left-0 py-0 px-[4%] z-[1000] flex items-center" style="background-color: #00031c;">
+        <div class="logo z-[1000]">
+            <a href="./index-before.html"><img src="./img/Screenshot_2023-08-09_172416-removebg-preview (1).png" alt="Logo Image"></a>
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <li class="active"><a href="./index-before.html">Home</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Products</a>
+                <ul class="dropdown">
+                    <li class="dropwdown1"><a href="#">Sub-1</a></li>
+                    <li class="dropwdown1"><a href="#">Sub-2</a></li>
+                    <li class="dropwdown1"><a href="#">Sub-3</a></li>
+                  </ul>
+            </li>
+            <li><a href="./aboutus.html">About</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+       
+        
+        </ul>
+        <a class="login-button" href="./login.html">Login</a>
+         <form action="" class="search-box">
+                <input type="text" name="search" placeholder="search Movie" class="search-input" required>
+                <!--  btn-->
+                <button type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
+    </nav>
     <img src="./images/image-login.jpg" class="min-w-full min-h-full fixed object-cover" alt="">
     <div class="bg-cover fixed w-full opacity-90 h-full" style="background-color: #00031C;"></div>
     <div ng-repeat="brd in brand">
