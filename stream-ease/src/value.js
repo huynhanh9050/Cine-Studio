@@ -358,6 +358,6 @@ let director=[
       {
         id: 13,
         name:  "Sergio Leone",
-        age: 86 (deceased)
+        age: 86
       }
 ]
