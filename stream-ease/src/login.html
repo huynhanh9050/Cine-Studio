@@ -54,8 +54,8 @@
         if(input_password=="")return  alert('Please Enter Password')
         if(username!=input_username||password!=input_password){
         alert('username or password is incorrect')
-        alert(input_username)
-        alert(input_password)
+        document.getElementById('username').value="";
+        document.getElementById('password').value="";
       }else{
         window.location.href='../src/index-after.html';
       }
