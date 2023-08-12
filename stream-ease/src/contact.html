@@ -210,11 +210,17 @@ nav{
         opacity: 1;
     }
 }
+.nav-links .active a{
+    color: #61DAFB;
+}
+.nav-links .active a::before{
+    width: 80%;
+}
 </style>
 <body>
     <nav class="w-[100%] h-[80px] fixed top-0 left-0 py-0 px-[4%] z-[1000] flex items-center" style="background-color: #00031c;">
         <div class="logo z-[1000]">
-            <img src="./img/Screenshot_2023-08-09_172416-removebg-preview (1).png" alt="Logo Image">
+            <a href="./index-before.html"><img src="./img/Screenshot_2023-08-09_172416-removebg-preview (1).png" alt="Logo Image"></a>
         </div>
         <div class="hamburger">
             <div class="line1"></div>
@@ -222,14 +228,15 @@ nav{
             <div class="line3"></div>
         </div>
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
+            <li><a href="./index-before.html">Home</a></li>
             <li><a href="#">Solutions</a></li>
             <li><a href="#">Products</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><button class="login-button" href="#">Login</button></li>
+            <li><a href="./aboutus.html">About</a></li>
+            <li class="active" ><a href="./contact.html">Contact Us</a></li>
+        
         
         </ul>
+        <a class="login-button" href="./login.html">Login</a>
         <form action="" class="search-box">
             <input type="text" name="search" placeholder="search Movie" class="search-input" required>
             <!--  btn-->

@@ -1,0 +1,81 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Actor details section */
+.actor-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.actor-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.actor-info img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.actor-info h2 {
+    margin-bottom: 0;
+}
+
+/* Movie list section */
+.movies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.movie-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    max-width: 300px;
+    margin: 10px;
+}
+
+.movie-card:hover {
+    transform: translateY(-10px);
+}
+
+.movie-card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.movie-title {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.movie-year {
+    margin-top: 5px;
+    color: #888;
+}

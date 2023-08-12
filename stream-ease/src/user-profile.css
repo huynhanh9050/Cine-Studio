@@ -394,6 +394,7 @@ display: none;
         background-color: #00031c;
         margin-left: -4vh;
     }
+        
     .header-bottom .nav li .active:after {
         content: " ";
         height: 3px;
