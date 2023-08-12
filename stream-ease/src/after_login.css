@@ -257,7 +257,7 @@ display: none;
         width: 35px;
         background-size: cover;
         transform: scale(0.4);
-        background-image: url(img/add.png);
+    
     }
     .watchlist-btn:hover{
         color: #fff;
@@ -689,7 +689,7 @@ display: none;
         width: 35px;
         background-size: cover;
         transform: scale(0.4);
-        background-image: url(img/add.png);
+
     }
     .watchlist-btn:hover{
         color: #fff;
