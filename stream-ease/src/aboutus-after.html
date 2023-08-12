@@ -6,15 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us</title>
   <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
-  <link rel="stylesheet" href="../dist/output.css">
 
-  <link rel="stylesheet" href="">
+
+
    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="./after_login.css">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -333,7 +334,7 @@ nav{
 <body>
     <nav class="w-[100%] h-[80px] fixed top-0 left-0 py-0 px-[4%] z-[1000] flex items-center" style="background-color: #00031c;">
         <div class="logo z-[1000]">
-            <img src="./img/Screenshot_2023-08-09_172416-removebg-preview (1).png" alt="Logo Image">
+            <a href="./index-after.html"><img src="./img/Screenshot_2023-08-09_172416-removebg-preview (1).png" alt="Logo Image"></a>
         </div>
         <div class="hamburger">
             <div class="line1"></div>
@@ -341,15 +342,51 @@ nav{
             <div class="line3"></div>
         </div>
         <ul class="nav-links">
-            <li><a href="./index-after.html">Home</a></li>
-            <li><a href="#">Solutions</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="./contact-after.html">Contact Us</a></li>
-            <li><button class="login-button" href="./login.html">Login</button></li>
+            <li class="active"><a href="./index-after.html">Home</a></li>
+            <li><a href="/StreamEase/stream-ease/src/moviess-after.html">Movies</a></li>
+            <li><a href="/StreamEase/stream-ease/src/tvshow-after.html">Tivi Show</a></li>
+            <li><a href="./price-after.html">Package</a></li>
+
+            <li><a href="./aboutus-after.html">About</a></li>
+            <li><a href="./contact_after.html">Contact Us</a></li>
+    
         
         </ul>
-        <form action="" class="search-box">
+        <div class="profile-dropdown">
+            <div onclick="toggle()" class="profile-dropdown-btn">
+              <div class="profile-img">
+                <i class="fa-solid fa-circle"></i>
+              </div>
+    
+              <span
+                >Victoria
+                <i class="fa-solid fa-angle-down"></i>
+              </span>
+            </div>
+    
+            <ul class="profile-dropdown-list">
+              <li class="profile-dropdown-list-item">
+                <a href="./user_page.html">
+                  <i class="fa-regular fa-user"></i>
+                  Profile
+                </a>
+              </li>
+    
+             
+    
+            
+             
+              <hr />
+    
+              <li class="profile-dropdown-list-item">
+                <a href="/StreamEase/stream-ease/src/index-before.html">
+                  <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                  Log out
+                </a>
+              </li>
+            </ul>
+          </div>
+          <form action="" class="search-box">
             <input type="text" name="search" placeholder="search Movie" class="search-input" required>
             <!--  btn-->
             <button type="submit">
@@ -563,7 +600,56 @@ nav{
         
     </div>
 
-  
+    <footer class="footer" style="background-color: #24262b;
+    padding: 70px 0;
+    position: absolute;
+    margin-top: 11vh;
+    /* width: 100%; */
+    width: 100%;
+    height: 50%;">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./main.js"></script>
     <script src="https://kit.fontawesome.com/8d355d0fd1.js" crossorigin="anonymous"></script>
     <script src="../node_modules/angular/angular.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>

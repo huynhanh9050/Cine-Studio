@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="../dist/output.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./after_login.css">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <style>
         .loader {
@@ -253,7 +254,7 @@ nav{
 <body>
     <nav class="w-[100%] h-[80px] fixed top-0 left-0 py-0 px-[4%] z-[1000] flex items-center" style="background-color: #00031c;">
         <div class="logo z-[1000]">
-            <a href="./index-before.html"><img src="./img/Screenshot_2023-08-09_172416-removebg-preview (1).png" alt="Logo Image"></a>
+            <a href="./index-after.html"><img src="./img/Screenshot_2023-08-09_172416-removebg-preview (1).png" alt="Logo Image"></a>
         </div>
         <div class="hamburger">
             <div class="line1"></div>
@@ -261,18 +262,51 @@ nav{
             <div class="line3"></div>
         </div>
         <ul class="nav-links">
-            <li><a href="./index-before.html">Home</a></li>
-            <li><a href="/StreamEase/stream-ease/src/moviess.html">Movies</a></li>
-            <li><a href="./tvshow.html">Tivi Shows</a></li>
-            <li><a href="./price-before.html">Package</a></li>
+            <li class="active"><a href="./index-after.html">Home</a></li>
+            <li><a href="/StreamEase/stream-ease/src/moviess-after.html">Movies</a></li>
+            <li><a href="/StreamEase/stream-ease/src/tvshow-after.html">Tivi Show</a></li>
+            <li><a href="./price-after.html">Package</a></li>
 
-            <li><a href="./aboutus.html">About</a></li>
-            <li class="active" ><a href="./contact.html">Contact Us</a></li>
-        
+            <li><a href="./aboutus-after.html">About</a></li>
+            <li><a href="./contact_after.html">Contact Us</a></li>
+    
         
         </ul>
-        <a class="login-button" href="./login.html">Login</a>
-        <form action="" class="search-box">
+        <div class="profile-dropdown">
+            <div onclick="toggle()" class="profile-dropdown-btn">
+              <div class="profile-img">
+                <i class="fa-solid fa-circle"></i>
+              </div>
+    
+              <span
+                >Victoria
+                <i class="fa-solid fa-angle-down"></i>
+              </span>
+            </div>
+    
+            <ul class="profile-dropdown-list">
+              <li class="profile-dropdown-list-item">
+                <a href="./user_page.html">
+                  <i class="fa-regular fa-user"></i>
+                  Profile
+                </a>
+              </li>
+    
+             
+    
+            
+             
+              <hr />
+    
+              <li class="profile-dropdown-list-item">
+                <a href="/StreamEase/stream-ease/src/index-before.html">
+                  <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                  Log out
+                </a>
+              </li>
+            </ul>
+          </div>
+          <form action="" class="search-box">
             <input type="text" name="search" placeholder="search Movie" class="search-input" required>
             <!--  btn-->
             <button type="submit">
@@ -400,6 +434,7 @@ nav{
         <script src="https://kit.fontawesome.com/8d355d0fd1.js" crossorigin="anonymous"></script>
         <script src="../node_modules/angular/angular.min.js"></script>
         <script src="https://cdn.tailwindcss.com"></script>
+        <script src="./main.js" ></script>
         <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
